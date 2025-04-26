@@ -1,7 +1,11 @@
 object puerteBrooklyn {
-    method puedePasar(){}
+    method puedePasar(mensajero){
+        mensajero.peso() <= 1000
+    }
 }
 
 object laMatrix {
-   method puedePasar(){}
+   method puedePasar(mensajero){
+    mensajero.puedeLlamar()
+   }
 }

@@ -1,6 +1,6 @@
 
 import vehiculosYPaquetes.*
-import objetos.*
+import destinos.*
 
 object roberto {
     var vehiculo = bici   //-->bici o camion
