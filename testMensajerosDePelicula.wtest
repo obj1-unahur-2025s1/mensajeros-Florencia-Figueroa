@@ -1,6 +1,20 @@
 import mensajeros.*
 import destinos.*
 import vehiculosYPaquetes.*
+import empresa.*
+
 
 
 //PRIMERA PARTE
+
+describe "grupo de tests de mensajeros" {
+  test "neo puede llevar paquete a puente de brooklyn" {
+    assert.that(paquete.sePuedeEntregar(neo))
+  }
+  test "facturacion"{
+    empresa.enviar(paquete)
+    empresa.enviar(paquetito)
+    empresa.enviar(paqueton)
+    assert.equals(50, empresa.facturacion())
+  }
+}

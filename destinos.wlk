@@ -1,3 +1,5 @@
+import mensajeros.*
+
 object puerteBrooklyn {
     method puedePasar(mensajero){
         mensajero.peso() <= 1000

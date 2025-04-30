@@ -3,15 +3,11 @@ import vehiculosYPaquetes.*
 import destinos.*
 
 object roberto {
-    var vehiculo = bici   //-->bici o camion
-
-    method peso(){
-      return 90 + vehiculo.peso()
-      }
-    method vehiculo(unVehiculo){
-      vehiculo = unVehiculo
-    }
+    var vehiculo = bici                 //-->bici o camion
+    const peso = 80
     method puedeLlamar()= false
+    method peso() = peso + vehiculo.peso()
+    method vehiculo(unVehiculo){vehiculo = unVehiculo}
 }
 
 
@@ -22,9 +18,8 @@ object chuckNorris {
 
 object neo {
   var tieneCredito = true
-
-  method peso() {return 0}
-  method cambiarCredito(){
-    tieneCredito = !tieneCredito
-  }
+  method peso() = 0
+  method puedeLlamar() = tieneCredito
+  method cargarCredito(){tieneCredito = true}
+  method hablar(){tieneCredito = false}
 }
